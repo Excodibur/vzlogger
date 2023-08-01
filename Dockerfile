@@ -78,4 +78,4 @@ RUN adduser -S vz -G dialout
 RUN vzlogger --version
 
 USER vz
-CMD ["vzlogger", "--foreground"]
+CMD ["vzlogger", "--foreground", "-c", "/cfg/vzlogger.conf"]
